@@ -53,7 +53,7 @@ h3 {
 
 h1 {
   max-width: 13.5ch;
-  font-size: clamp(2.55rem, 5.9vw, 5.1rem);
+  font-size: clamp(2.45rem, 5.5vw, 4.75rem);
 }
 
 h2 {
@@ -193,16 +193,9 @@ main {
   box-shadow: var(--shadow);
 }
 
-.profile-panel img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-}
-
 .profile-panel dl {
   margin: 0;
-  padding: 20px;
+  padding: 24px;
 }
 
 .profile-panel div {
