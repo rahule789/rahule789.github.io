@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: var(--paper);
@@ -166,6 +170,10 @@ main {
   border-radius: 999px;
   font-size: 0.92rem;
   font-weight: 800;
+  text-decoration: none;
+  transition:
+    box-shadow 160ms ease,
+    transform 160ms ease;
 }
 
 .button.primary {
@@ -270,6 +278,10 @@ main {
   background: linear-gradient(135deg, #ffffff 0%, var(--soft-green) 100%);
 }
 
+.work-card:nth-child(4) {
+  background: linear-gradient(135deg, #ffffff 0%, #f8efe3 100%);
+}
+
 .work-card p,
 .project-card p,
 .skills-grid p {
@@ -285,6 +297,8 @@ main {
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .tag-list li {
@@ -295,6 +309,46 @@ main {
   color: var(--ink);
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  min-height: 42px;
+  padding: 0 15px;
+  border: 1px solid rgba(37, 79, 116, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--blueprint);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  border-color: var(--blueprint);
+  background: #ffffff;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.additional-project {
+  border-style: dashed;
+  box-shadow: none;
 }
 
 .skills-grid {
@@ -332,6 +386,12 @@ main {
 .footer a {
   color: var(--botanical);
   font-weight: 800;
+}
+
+.footer a:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--botanical);
+  outline-offset: 4px;
 }
 
 @media screen and (max-width: 900px) {
@@ -404,5 +464,16 @@ main {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button,
+  .project-link {
+    transition: none;
   }
 }

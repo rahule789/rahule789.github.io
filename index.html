@@ -18,23 +18,24 @@
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="Rahul_Erukulla_Resume.docx">Resume</a>
+        <a href="Resume26.pdf" target="_blank" rel="noreferrer">Resume</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Senior Software Engineer · AI Platforms · Backend Systems</p>
-          <h1>Building reliable payment systems and practical AI tools that ship.</h1>
+          <p class="eyebrow">Senior Software Engineer · Payment APIs · AI Platforms</p>
+          <h1>Building payment systems that stay reliable and AI tools engineers use.</h1>
           <p class="hero-text">
-            I am a software engineer at Visa focused on high-throughput APIs,
-            production reliability, multi-agent systems, and LLM-powered developer
-            workflows. I work across backend architecture, AI automation, and
-            product-minded application development.
+            I am a Senior Software Engineer at Visa building high-throughput payment
+            APIs, distributed backend systems, and AI-powered developer platforms
+            in regulated environments.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="Rahul_Erukulla_Resume.docx">Download resume</a>
+            <a class="button primary" href="Resume26.pdf" target="_blank" rel="noreferrer">
+              View resume
+            </a>
             <a class="button secondary" href="mailto:rahul.erukulla123@gmail.com">Contact</a>
           </div>
         </div>
@@ -64,29 +65,38 @@
         <div class="work-grid">
           <article class="work-card">
             <span class="card-label">Payments API</span>
-            <h3>Bulk requisition platform</h3>
+            <h3>External bulk requisition API</h3>
             <p>
-              Owned design, architecture, development, and deployment for a
-              high-throughput payment API supporting millions of transactions,
-              99.999% availability, sub-second responses, and 500 TPS peak load.
+              Owned architecture and launch for a publicly documented Visa Developer
+              Platform service, defining the client contract, request validation,
+              bulk-processing lifecycle, and error semantics.
+            </p>
+          </article>
+          <article class="work-card">
+            <span class="card-label">Production Reliability</span>
+            <h3>High-throughput Java services</h3>
+            <p>
+              Designed and operated Spring Boot services processing millions of
+              production transactions with 99.999% availability, sub-second
+              responses, and 500 TPS peak throughput.
             </p>
           </article>
           <article class="work-card">
             <span class="card-label">AI Resilience</span>
             <h3>Chaos engineering platform</h3>
             <p>
-              Built a LangGraph and Claude-based platform that generates failure
-              scenarios, injects faults, and analyzes system behavior to validate
-              reliability across enterprise teams.
+              Led team-wide adoption of a LangGraph and Claude platform that
+              generates failure scenarios, injects faults, and analyzes
+              distributed-system behavior.
             </p>
           </article>
           <article class="work-card">
-            <span class="card-label">Developer Tools</span>
-            <h3>CI/CD AI agents</h3>
+            <span class="card-label">Developer Platforms</span>
+            <h3>MCP agents and grounded LLM tools</h3>
             <p>
-              Designed MCP-based agents for context-aware code review, automated
-              security assessment, and intelligent test generation inside delivery
-              pipelines.
+              Designed MCP-based CI/CD agents adopted across the team and built RAG
+              pipelines used across the organization for reliable,
+              documentation-grounded developer workflows.
             </p>
           </article>
         </div>
@@ -100,48 +110,79 @@
         <div class="project-list">
           <article class="project-card featured-project">
             <div>
+              <span class="card-label">AI Evaluation · MCP + Observability</span>
+              <h3>AgentGuard</h3>
+            </div>
+            <p>
+              Built a Spring Boot evaluation platform for simulated payment agents
+              with six typed MCP tools, deterministic checks, an optional Claude
+              LLM-as-judge, OpenTelemetry traces, replayable failures, PII
+              redaction, policy controls, audit logs, and human approvals.
+            </p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MCP</li>
+              <li>Claude API</li>
+              <li>OpenTelemetry</li>
+              <li>Docker</li>
+            </ul>
+            <div class="project-actions">
+              <a
+                class="project-link"
+                href="https://github.com/rahule789/agentguard"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View source <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
               <span class="card-label">AI Product · Mobile + Backend</span>
               <h3>AI Wedding Planning Application</h3>
             </div>
             <p>
-              Built an iOS-first planning app that captures couple logistics and
-              style preferences, then produces vision-aware vendor matches and
-              personalized outreach drafts.
+              Built an iOS-first Expo React Native platform with a Next.js/tRPC API,
+              combining deterministic vendor filters with structured-output LLM
+              ranking and fallback scoring. Added editable outreach drafts, Resend
+              delivery, inbound webhooks, persistent threads, and latency/token
+              telemetry.
             </p>
             <ul class="tag-list" aria-label="Technologies">
               <li>Expo React Native</li>
               <li>Next.js</li>
               <li>tRPC</li>
-              <li>Clerk</li>
-              <li>Neon Postgres</li>
-              <li>Drizzle</li>
-              <li>Gemini</li>
+              <li>PostgreSQL</li>
               <li>Resend</li>
-              <li>Zod</li>
+              <li>LLM ranking</li>
+              <li>Telemetry</li>
             </ul>
           </article>
 
           <article class="project-card">
             <div>
-              <span class="card-label">Agentic AI</span>
-              <h3>AI Assistant for Local Service Operations</h3>
-            </div>
-            <p>
-              Architected a multi-agent assistant with CrewAI and FastAPI to
-              handle inbound calls, appointment booking, customer inquiries,
-              conversational memory, and POS integrations.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <span class="card-label">Distributed Systems</span>
+              <span class="card-label">Distributed Systems · Identity</span>
               <h3>Blockchain Identity for VANETs</h3>
             </div>
             <p>
-              Developed a Hyperledger Fabric-based identity system for encrypted
-              communication between autonomous vehicles, road-side units, and
-              infrastructure nodes.
+              Built a Hyperledger Fabric identity system and smart contracts for
+              vehicle registration, revocation, encrypted communication, and
+              tamper-resistant audit trails across vehicular ad hoc networks.
+            </p>
+          </article>
+
+          <article class="project-card additional-project">
+            <div>
+              <span class="card-label">Additional Build · Agentic AI</span>
+              <h3>AI Assistant for Local Service Operations</h3>
+            </div>
+            <p>
+              Architected a CrewAI and FastAPI assistant for inbound calls,
+              appointment booking, customer inquiries, conversational memory, and
+              point-of-sale integrations.
             </p>
           </article>
         </div>
@@ -155,19 +196,22 @@
         <div class="skills-grid">
           <article>
             <h3>Languages</h3>
-            <p>Java, Python, Scala, JavaScript, TypeScript, SQL</p>
+            <p>Java, Python, JavaScript, TypeScript, SQL</p>
           </article>
           <article>
-            <h3>Backend</h3>
-            <p>Spring Boot, REST APIs, tRPC, Hibernate, Kafka, MCP, CI/CD</p>
+            <h3>Backend &amp; Data</h3>
+            <p>
+              Spring Boot, REST APIs, FastAPI, React, Next.js, tRPC, Hibernate,
+              PostgreSQL, DB2, Kafka
+            </p>
           </article>
           <article>
-            <h3>AI / LLM</h3>
-            <p>LangGraph, CrewAI, Claude API, OpenAI API, Gemini, RAG, prompt engineering</p>
+            <h3>Cloud &amp; Delivery</h3>
+            <p>AWS, Docker, GitHub Actions, CI/CD</p>
           </article>
           <article>
-            <h3>Data / Cloud</h3>
-            <p>PostgreSQL, Neon, Drizzle, DB2, MongoDB, Apache Spark, AWS</p>
+            <h3>AI &amp; Observability</h3>
+            <p>LangGraph, Claude API, MCP, RAG, LLM evaluation, OpenTelemetry</p>
           </article>
         </div>
       </section>
@@ -178,6 +222,13 @@
       <div>
         <a href="mailto:rahul.erukulla123@gmail.com">Email</a>
         <a href="https://github.com/rahule789" target="_blank" rel="noreferrer">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/rahul-erukulla"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
       </div>
     </footer>
   </body>
