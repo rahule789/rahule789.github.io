@@ -668,6 +668,29 @@ main,
   color: var(--slate);
 }
 
+.impact-reference {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 7px;
+  margin-top: 4px;
+  color: var(--network);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-decoration-color: rgba(31, 102, 229, 0.4);
+  text-underline-offset: 5px;
+  text-transform: uppercase;
+}
+
+.impact-reference:hover,
+.impact-reference:focus-visible {
+  color: var(--ink);
+  outline: none;
+  text-decoration-color: currentColor;
+}
+
 .projects-section {
   padding-bottom: 130px;
 }
